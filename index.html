@@ -117,6 +117,11 @@
         height: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
     }
 
+    .slider-image{
+      max-width: 200px;
+      height: auto;
+    }
+
     @media (max-width: 600px) {
         .container {
             flex-direction: column;
@@ -134,7 +139,54 @@
           margin-bottom: 10px;
         }
     }
-    
+
+    .slider {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative; /* Añadido */
+    margin-bottom: -60px;
+  }
+
+  .slider-image {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .slide {
+    flex: 0 0 100%;
+    transition: transform 1s ease;
+  }
+
+  /* Controles */
+  .controls {
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Añadido */
+    transform: translateX(-50%); /* Añadido */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  .control-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 50%;
+  }
+
+  .control-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+ 
   </style>
 </head>
 <body>
@@ -184,6 +236,18 @@
             riendas de la relación (como no podía ser de otra
             manera) y decidió hincar la rodilla... ¡Y Jose dijo que
             sí!
+              <div class="slider">
+                <div class="slide">
+                  <img class="slider-image" src="ariella.jpg" alt="demo image" />
+                </div>
+                <div class="slide">
+                  <img class="slider-image" src="cocopina.jpg" alt="demo image" />
+                </div>
+                <div class="controls">
+                  <button class="control-btn" id="anterior-btn" onclick="prevSlide()">&lt;</button>
+                  <button class="control-btn" id="siguiente-btn" onclick="nextSlide()">&gt;</button>
+                </div>
+            </div>
           </div>
         </div>
         <div class="sc-gHboQg iiQWEf"></div>
@@ -357,4 +421,36 @@
   </script> 
   <script src="/website/client_bundle.js"></script>
 </body>
+<script>
+const slides = document.querySelectorAll(".slide");
+let currentSlide = 0;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    const slideWidth = slide.clientWidth;
+    slide.style.transform = `translateX(-${index * slideWidth}px)`;
+  });
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+  resetInterval();
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+  resetInterval();
+}
+
+showSlide(currentSlide);
+
+intervalId = setInterval(nextSlide, 5000); // Iniciar un nuevo intervalo
+
+function resetInterval() {
+  clearInterval(intervalId); // Detener el intervalo actual
+  intervalId = setInterval(nextSlide, 5000); // Iniciar un nuevo intervalo
+}
+</script>
 </html>

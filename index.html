@@ -117,11 +117,6 @@
         height: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
     }
 
-    .slider-image{
-      max-width: 200px;
-      height: auto;
-    }
-
     @media (max-width: 600px) {
         .container {
             flex-direction: column;
@@ -141,13 +136,12 @@
     }
 
     .slider {
-    width: 500px;
+    max-width: 500px;
     height: 300px;
     margin: auto;
     overflow: hidden;
     display: flex;
     align-items: center;
-    position: relative; /* Añadido */
     margin-bottom: -60px;
   }
 
@@ -238,14 +232,10 @@
             sí!
               <div class="slider">
                 <div class="slide">
-                  <img class="slider-image" src="ariella.jpg" alt="demo image" />
+                  <img class="slider-image" src="photos/ariella.jpg" alt="demo image" />
                 </div>
                 <div class="slide">
-                  <img class="slider-image" src="cocopina.jpg" alt="demo image" />
-                </div>
-                <div class="controls">
-                  <button class="control-btn" id="anterior-btn" onclick="prevSlide()">&lt;</button>
-                  <button class="control-btn" id="siguiente-btn" onclick="nextSlide()">&gt;</button>
+                  <img class="slider-image" src="photos/cocopina.jpg" alt="demo image" />
                 </div>
             </div>
           </div>
@@ -347,8 +337,8 @@
             ES90 0182 1343 4602 0173 0772
           </div>
           <div class="container">
-            <img class="image" src="cocopina.jpg" alt="Primera Imagen">
-            <img class="image" src="ariella.jpg" alt="Segunda Imagen">
+            <img class="image" src="photos/cocopina.jpg" alt="Primera Imagen">
+            <img class="image" src="photos/ariella.jpg" alt="Segunda Imagen">
           </div>
         </div>
         <div class="sc-gHboQg iiQWEf"></div>
@@ -416,10 +406,6 @@
       </div>
     </div>
   </div>
-  <script>
-  window.REDUX_DATA = {"environment":{"name":"production","is_prod":true,"tracking_enabled":false},"Announcements":{"announcement":{},"loading":false,"error":null,"success":null},"GuestListLookup":{},"GuestListRequest":{"is_sending":false,"submitted":false,"data":[]},"Password":null,"RSVP":{"response":{}},"Website":{"is_fetching":false,"password_required":false,"slug":"mariayjose","couple":{"name":"María K","spouse":"Jose"},"design":{"alignments":{"card":"left"},"colors":{"accent":"000","background":"f8f7f5","cover_background":"f8f7f5","cover_text":"000000"},"font_sizes":{"primary":5,"tertiary":1.1,"title":2,"salutation":1.25,"date":1.25,"navigation":1},"fonts":{"primary":"flabbergast","tertiary":"addingtoncf-thin","title":"chocolates"},"formats":{"date":"DD/MM/YY","time":"HH:mm"},"id":"310","images":{"cover":{"original":"https://uploads.sayi.do/qyGUUW8AmQT1QDT5VB3fuSIqtfE2/images/8bbadee7-55d4-1d96-8dc3-728ac0d4e960_Disenosintitulo5.png"}},"is_locked":false,"positions":{"card":{"x":"start","y":"end"}},"updated_at":"2024-05-12T14:22:21.602Z"},"forms":{"guest_self_entry":{"active":false,"email_address":false,"phone_number":false}},"id":"qyGUUW8AmQT1QDT5VB3fuSIqtfE2","sections":{"8a07b65d-63b4-99cb-ef05-1465b0752824":{"active":true,"body":"En el caso que necesiteis alojamiento, os dejamos estas sugerencias cercanas al lugar de la ceremonia","date_updated":"2024-05-11T16:12:45.619Z","id":"8a07b65d-63b4-99cb-ef05-1465b0752824","links":{"04e4f979-36a0-ce7b-43ad-c2644d5db441":{"active":true,"link":"https://www.booking.com/hotel/es/ar-apartamentos-soto-real.en-gb.html?aid=311090&label=ar-apartamentos-soto-real-HQ2fmrwYVj7OCYA5BoSYyQS338497995075%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-517676004392%3Alp9047045%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YcGt_tphEo8pawEozW2KQ80&sid=f6c3979e4eb81c1247202564b064570f&dest_id=900040099;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1715443953;srpvid=13ca71f6f7c300bf;type=total;ucfs=1&#hotelTmpl","name":"AR Apartamentos"},"7d8aa4d2-543e-f0c1-f88a-38e54f8838c0":{"active":true,"link":"https://www.booking.com/hotel/es/la-posada-de-miraflores.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaEaIAQGYAQm4AQfIAQ3YAQHoAQH4AQuIAgGoAgO4AoGw_rEGwAIB0gIkMDM1OTBkMGItMGNiYy00YjJiLWI2ODQtZGY0YmQ5NGM4NzM32AIG4AIB&sid=f6c3979e4eb81c1247202564b064570f&dest_id=-392169;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=2;hpos=2;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1715443831;srpvid=4dec71b97ea5013c;type=total;ucfs=1&#hotelTmpl","name":"Hotel la Muñequilla"},"fd7dba98-bc41-1480-4b45-a35f6378bbb0":{"active":true,"link":"https://www.booking.com/hotel/es/prado-real.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaEaIAQGYAQm4AQfIAQ3YAQHoAQH4AQuIAgGoAgO4AoGw_rEGwAIB0gIkMDM1OTBkMGItMGNiYy00YjJiLWI2ODQtZGY0YmQ5NGM4NzM32AIG4AIB&sid=f6c3979e4eb81c1247202564b064570f&dest_id=-392169;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=3;hpos=3;nflt=ht_id%3D204;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1715443894;srpvid=4dec71b97ea5013c;type=total;ucfs=1&#hotelTmpl","name":"Hotel Prado Real"}},"order":8,"title":"Alojamiento","type":"generic","visibility":"all"},"d87b6837-241e-b4a7-4387-e122b6149676":{"active":true,"date_updated":"2024-05-03T15:25:08.200Z","id":"d87b6837-241e-b4a7-4387-e122b6149676","order":9,"title":"Wedding Countdown","type":"countdown","visibility":"all"},"rsvp":{"active":true,"body":"Por favor, confirmanos tu asistencia lo antes haciendo click en el botón de \"RSVP\". Nos ayudareis a organizarnos mejor. Necesitamos saber si contamos con tu presencia antes del 1 de Octubre.","date_updated":"2024-05-11T15:52:29.769Z","id":"rsvp","order":7,"questions":[{"active":false,"deleted":true,"id":"36518618-d624-49e2-9487-d31432822e68","label":"¿Quieres menú vegetariano o vegano?","options":{"b51db000-567f-b31c-0e80-9a43e67c421e":{"id":"b51db000-567f-b31c-0e80-9a43e67c421e","label":"Vegano","order":1},"f538c025-216c-adf7-4662-8d573b6cb697":{"id":"f538c025-216c-adf7-4662-8d573b6cb697","label":"Vegetariano","order":0}},"order":1715443202102,"required":false,"type":"options","updated_at":"2024-05-11T16:00:02.102Z","visibility":"all","visible_to":{}},{"active":true,"id":"eda46120-d7c3-e528-c7cb-e514bd7c1105","label":"¿Tienes alguna alergia alimentaria? Si eres vegetariano o vegano indícanoslo aquí","order":1715443161552,"required":false,"type":"text","updated_at":"2024-05-11T16:03:02.939Z","visibility":"all","visible_to":{}}],"show_dietary_requirements":true,"show_email_address":true,"title":"Confirmar asistencia","type":"rsvp","visibility":"all"},"schedule":{"active":true,"date_updated":"2024-05-11T15:20:28.992Z","events":{"6b1eed16-8063-4e63-2853-df072b07f07b":{"attire":"","date_added":"2024-05-11T15:23:02.340Z","description":"","hide_address":true,"id":"6b1eed16-8063-4e63-2853-df072b07f07b","name":"Cóctel de bienvenida","privacy":false,"rsvp":false,"start_date":{"date":"2024-11-09","time":"13:45","utc":"2024-11-09T13:45:00Z"},"venue":{"address":"Ctra de Soto del Real a Miraflores, Km. 3,100, 28792 Miraflores de la Sierra, Madrid, Spain","geometry":{"lat":40.78365469999999,"lng":-3.796187300000001},"name":"Hacienda Jacaranda","place_id":"ChIJ2REIHKVjQQ0RaOa8SrV_uXU","source":"google_maps","utc_offset_minutes":120}},"7cf832c0-b1cc-bab3-cf4f-fa26c7f1466c":{"attire":"","date_added":"2024-05-11T15:23:35.460Z","description":"","hide_address":true,"id":"7cf832c0-b1cc-bab3-cf4f-fa26c7f1466c","name":"Banquete","privacy":false,"rsvp":false,"start_date":{"date":"2024-11-09","time":"15:00","utc":"2024-11-09T15:00:00Z"},"venue":{"address":"Ctra de Soto del Real a Miraflores, Km. 3,100, 28792 Miraflores de la Sierra, Madrid, Spain","geometry":{"lat":40.78365469999999,"lng":-3.796187300000001},"name":"Hacienda Jacaranda","place_id":"ChIJ2REIHKVjQQ0RaOa8SrV_uXU","source":"google_maps","utc_offset_minutes":120}},"82ca3669-3129-9629-472f-1745359be733":{"attire":"","date_added":"2024-05-03T15:32:53.308Z","date_updated":"2024-05-11T15:21:40.773Z","description":"","hide_address":false,"id":"82ca3669-3129-9629-472f-1745359be733","name":"Ceremonia","privacy":false,"rsvp":false,"start_date":{"date":"2024-11-09","time":"13:00","utc":"2024-11-09T13:00:00Z"},"venue":{"address":"Ctra de Soto del Real a Miraflores, Km. 3,100, 28792 Miraflores de la Sierra, Madrid, Spain","geometry":{"lat":40.78365469999999,"lng":-3.796187300000001},"name":"Hacienda Jacaranda","place_id":"ChIJ2REIHKVjQQ0RaOa8SrV_uXU","source":"google_maps","utc_offset_minutes":120}},"ebfe3165-af56-f495-be62-b093a9186a90":{"attire":"","date_added":"2024-05-11T15:25:58.482Z","date_updated":"2024-05-11T15:27:22.957Z","description":"","hide_address":true,"id":"ebfe3165-af56-f495-be62-b093a9186a90","name":"Comienza la fiesta","privacy":false,"rsvp":false,"start_date":{"date":"2024-11-09","time":"19:00","utc":"2024-11-09T19:00:00Z"},"venue":{"address":"Ctra de Soto del Real a Miraflores, Km. 3,100, 28792 Miraflores de la Sierra, Madrid, Spain","geometry":{"lat":40.78365469999999,"lng":-3.796187300000001},"name":"Hacienda Jacaranda","place_id":"ChIJ2REIHKVjQQ0RaOa8SrV_uXU","source":"google_maps","utc_offset_minutes":120}}},"id":"schedule","order":2,"title":"Horario","type":"schedule","visibility":"all"},"story":{"active":true,"body":"María y Jose se conocieron en julio de 2013 en una barbacoa de manera inesperada, celebrando el comienzo del verano tras un intenso primer año universitario. Jose sintió muchísima curiosidad por el mundo del caballo del que tanto hablaba María, y eso a ella le engatusó.\n\nTras varias semanas de conversaciones hasta altas horas de la madrugada, sin darse cuenta, empezaron una aventura en la que ya llevan más 10 años juntos. En diciembre de 2022, María decidió tomar las riendas de la relación (como no podía ser de otra manera) y decidió hincar la rodilla... ¡Y Jose dijo que sí!","date_updated":"2024-05-11T15:19:50.575Z","id":"story","order":1,"title":"Nuestra historia","type":"story","visibility":"all"},"wishingwell":{"active":true,"body":"Tres cosas no pueden faltar en nuestras vidas. Salud, Dinero y Amor.\n\nPor suerte estamos sanos y muy enamorados, así que podéis ayudarnos con lo que nos falta para que Coco, Piña y Ariella sigan pudiendo comer latitas y heno de calidad.\n\nES90 0182 1343 4602 0173 0772","collection_method":"bank","date_updated":"2024-05-11T15:45:09.583Z","id":"wishingwell","order":6,"secondary_body":"","title":"Regalos","type":"wishingwell","visibility":"all"}},"settings":{"active":true,"header_button":"rsvp","hide_date":false,"languages":{"es":true},"layout":"singlepage","lexicon":{"en":{"request":"Nos encantaría que formaras parte de este día tan especial para nosotros"}},"slug":"mariayjose","theme":0,"wedding_date":{"utc":"2024-11-09T00:00:00Z"},"wizard_complete":true},"hide_marketing":false,"timestamp":"2024-05-12T14:26:05.364Z"},"User":{"session_id":null,"visitor_id":null,"location":{},"party":{"group":[]}}}
-  </script> 
-  <script src="/website/client_bundle.js"></script>
 </body>
 <script>
 const slides = document.querySelectorAll(".slide");
@@ -446,11 +432,11 @@ function prevSlide() {
 
 showSlide(currentSlide);
 
-intervalId = setInterval(nextSlide, 5000); // Iniciar un nuevo intervalo
+intervalId = setInterval(nextSlide, 10000); // Iniciar un nuevo intervalo
 
 function resetInterval() {
   clearInterval(intervalId); // Detener el intervalo actual
-  intervalId = setInterval(nextSlide, 5000); // Iniciar un nuevo intervalo
+  intervalId = setInterval(nextSlide, 10000); // Iniciar un nuevo intervalo
 }
 </script>
 </html>

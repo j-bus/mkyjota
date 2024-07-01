@@ -60,11 +60,11 @@
         --salutation-font-family: "chocolates", sans-serif;
         --primary-line-height: 1.2em;
         --primary-font-size: 4em;
-        --tertiary-font-size: 1.2em;
+        --tertiary-font-size: 1.5em;
         --title-font-size: 2em;
         --in-section-subtitle-font-size: 1.32em;
-        --date-font-size: 1.25em;
-        --salutation-font-size: 1.25em;
+        --date-font-size: 1.8em;
+        --salutation-font-size: 1.8em;
         --button-border-radius: 4px;
       }
 
@@ -75,6 +75,7 @@
       @media (min-width: 768px) {
         .eYlzrN {
           font-size: 1rem !important; /* 16px */
+          --tertiary-font-size: 2em;
         }
       }
 
@@ -106,7 +107,12 @@
     <meta data-react-helmet="true" name="theme-color" content="#f8f7f5" />
     <title data-react-helmet="true">María K y Jose</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <style
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      <style
       data-styled-components="iVXCSc jutElC ePqrBv eYlzrN icmLLf jbTUBz ibnYMY ebYnuD esrIDb jfAixi bCQhjy Hxhgm kGwmxK hhCqrB ekhwHJ fRNfx iiQWEf jDEgZF fvNVbZ idFPgf ifvQhQ knUdam jrVKlE cuuNXK gnYEbH hkgUNq bVdvGr kuSTBl esLPVU jBrJiT aSWT flYskr Fhhut bPAkRy iqUoli loKcPZ bnfneG"
     >
       /* sc-component-id: sc-keyframes-iVXCSc */
@@ -157,11 +163,11 @@
         --salutation-font-family: "chocolates", sans-serif;
         --primary-line-height: 1.2em;
         --primary-font-size: 4em;
-        --tertiary-font-size: 1.2em;
+        --tertiary-font-size: 1.5em;
         --title-font-size: 2em;
         --in-section-subtitle-font-size: 1.32em;
-        --date-font-size: 1.25em;
-        --salutation-font-size: 1.25em;
+        --date-font-size: 1.8em;
+        --salutation-font-size: 1.8em;
         --button-border-radius: 4px;
       }
       .website-preview .eYlzrN {
@@ -933,6 +939,30 @@
         max-width: 350px;
         height: auto;
       }
+      .account{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .fa-icon {
+            cursor: pointer;
+            margin-left: 28px;
+            transition: transform 0.1s, background-color 0.1s;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .fa-icon:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        .fa-icon:active {
+            transform: scale(0.95);
+            background-color: #777;
+        }
+
     </style>
   </head>
   <body>
@@ -988,7 +1018,7 @@
                   class="sc-feJyhm icmLLf"
                   style="
                     font-family: 'High Spirited', sans-serif;
-                    font-size: auto;
+                    font-size: 5em;
                   "
                 >
                   María K <span class="sc-iELTvK jbTUBz">&</span> Jose
@@ -998,7 +1028,10 @@
                   para nosotros
                 </h5>
                 <h3 class="sc-cmTdod ebYnuD">9 de Noviembre de 2024</h3>
-                <div class="sc-ktHwxA esrIDb">
+                <div
+                  class="sc-ktHwxA esrIDb"
+                  style="font-size: 1.28em !important"
+                >
                   <a
                     class="sc-jTzLTM jfAixi"
                     href="https://docs.google.com/forms/d/1ID3DDAa_NvYe9CKStH0bjXibEBEBpXmxp_RrO_6Tu-s"
@@ -1021,11 +1054,11 @@
               intenso primer año universitario. Jose sintió muchísima curiosidad
               por el mundo del caballo del que tanto hablaba María, y eso a ella
               le engatusó.
-              <br>
-              <br>
-              Tras varias semanas de conversaciones hasta altas horas de
-              la madrugada, sin darse cuenta, empezaron una aventura en la que
-              ya llevan más 10 años juntos. En diciembre de 2022, María tomó las
+              <br />
+              <br />
+              Tras varias semanas de conversaciones hasta altas horas de la
+              madrugada, sin darse cuenta, empezaron una aventura en la que ya
+              llevan más 10 años juntos. En diciembre de 2022, María tomó las
               riendas de la relación (como no podía ser de otra manera) y
               decidió hincar la rodilla... ¡Y Jose dijo que sí!
               <div class="slider" style="margin-top: 28px">
@@ -1046,7 +1079,7 @@
                 <div class="slide">
                   <img
                     class="slider-image"
-                    src="photos/edit-5.JPEG"
+                    src="photos/edit-5.jpeg"
                     alt="image 5"
                   />
                 </div>
@@ -1060,7 +1093,7 @@
                 <div class="slide">
                   <img
                     class="slider-image"
-                    src="photos/edit-3.JPEG"
+                    src="photos/edit-3.jpeg"
                     alt="image 6"
                   />
                 </div>
@@ -1074,7 +1107,7 @@
               </div>
             </div>
           </div>
-          <div class="sc-gHboQg iiQWEf" style="margin-top: 36px;"></div>
+          <div class="sc-gHboQg iiQWEf" style="margin-top: 36px"></div>
         </div>
         <div class="sc-dUjcNx Hxhgm" id="schedule">
           <div class="sc-RefOD kGwmxK" type="schedule">
@@ -1146,10 +1179,13 @@
               Tres cosas no pueden faltar en nuestras vidas. Salud, Dinero y
               Amor. Por suerte estamos sanos y muy enamorados, así que podéis
               ayudarnos con lo que nos falta para que Coco, Piña y Ariella sigan
-              pudiendo comer latitas y heno de calidad. 
-              <br>
-              <br>
-              ES90 0182 1343 4602 0173 0772
+              pudiendo comer latitas y heno de calidad.
+              <br />
+              <br />
+              <div class="account">
+                <div>ES90 0182 1343 4602 0173 0772</div>
+                <i class="fas fa-copy" style="margin-left: 28px;" onclick="copyText()"></i>
+              </div>
             </div>
             <div class="container" style="margin-top: 30px">
               <img
@@ -1167,8 +1203,11 @@
               <div class="sc-fYiAbW ekhwHJ">Confirmar asistencia</div>
               <div class="sc-fOKMvo fRNfx">
                 Por favor, confirmanos tu asistencia lo antes para ayudarnos a
-                organizarnos mejor. <b>Necesitamos saber si contamos con tu
-                presencia antes del 1 de Octubre.</b>
+                organizarnos mejor.
+                <b
+                  >Necesitamos saber si contamos con tu presencia antes del 1 de
+                  Octubre.</b
+                >
               </div>
               <div class="sc-bMVAic aSWT">
                 <a
@@ -1227,7 +1266,7 @@
                 >
               </div>
             </div>
-            <div class="sc-fOKMvo fRNfx">
+            <div class="sc-fOKMvo fRNfx" style="margin-top: 40px">
               PD: En el Hotel La Muñequilla <b>teneis descuento si llamais</b> y
               decís que sois invitados de la boda de María y Jose.
             </div>
@@ -1235,7 +1274,9 @@
           <div class="sc-gHboQg iiQWEf"></div>
         </div>
         <div class="sc-eilVRo bnfneG" id="footer">
-          <div>Web hecha con cariño por <span>Jota</span></div>
+          <div style="font-size: 0.7em; margin-top: 20px">
+            Web hecha con cariño por <span>Jota</span>
+          </div>
         </div>
       </div>
     </div>
@@ -1306,6 +1347,22 @@
         document.getElementById("passwordPrompt").style.display = "flex";
       }
     }
+
+    function copyText() {
+            // Crear un campo de texto temporal
+            var tempInput = document.createElement("input");
+            // Obtener el texto del elemento input
+            tempInput.value = "ES90 0182 1343 4602 0173 0772";
+            // Añadir el campo de texto temporal al body
+            document.body.appendChild(tempInput);
+            // Seleccionar el texto del campo temporal
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999); // Para dispositivos móviles
+            // Copiar el texto al portapapeles
+            document.execCommand("copy");
+            // Eliminar el campo de texto temporal
+            document.body.removeChild(tempInput);
+        }
 
     window.onload = checkAuthentication;
   </script>

@@ -59,12 +59,12 @@
         --date-font-family: "chocolates", sans-serif;
         --salutation-font-family: "chocolates", sans-serif;
         --primary-line-height: 1.2em;
-        --primary-font-size: 4em;
-        --tertiary-font-size: 1.5em;
-        --title-font-size: 2em;
-        --in-section-subtitle-font-size: 1.32em;
-        --date-font-size: 1.8em;
-        --salutation-font-size: 1.8em;
+        --primary-font-size: 3em;
+        --tertiary-font-size: 1em;
+        --title-font-size: 1.5em;
+        --in-section-subtitle-font-size: 1em;
+        --date-font-size: 1em;
+        --salutation-font-size: 1em;
         --button-border-radius: 4px;
       }
 
@@ -82,6 +82,114 @@
       @media (min-width: 1120px) {
         .eYlzrN {
           font-size: 1.1875rem !important; /* 19px */
+        }
+      }
+      /* Estilo base para la fuente */
+      body {
+        font-size: 16px;
+      }
+
+      /* Media query para pantallas muy pequeñas (por ejemplo, teléfonos antiguos) */
+      @media (max-width: 320px) {
+        .ebYnuD {
+          color: var(--cover-text-color);
+          font-family: var(--date-font-family);
+          font-size: 1em !important; /* Ajuste de tamaño */
+          font-weight: normal;
+          margin: 1em 0;
+        }
+        .ibnYMY {
+          color: var(--cover-text-color);
+          font-family: var(--salutation-font-family);
+          font-size: 1.2em !important; /* Ajuste de tamaño */
+          font-weight: normal;
+          margin: 0.5em 0 1em;
+        }
+        .eYlzrN {
+          --primary-font-size: 2em !important; /* Ajuste de tamaño */
+          --tertiary-font-size: 1em !important; /* Ajuste de tamaño */
+          --title-font-size: 1.5em !important; /* Ajuste de tamaño */
+          --in-section-subtitle-font-size: 1em !important; /* Ajuste de tamaño */
+          --date-font-size: 1.3em !important; /* Ajuste de tamaño */
+          --salutation-font-size: 1.3em !important; /* Ajuste de tamaño */
+        }
+      }
+
+      /* Media query para teléfonos móviles en orientación vertical */
+      @media (max-width: 480px) {
+        .ebYnuD {
+          color: var(--cover-text-color);
+          font-family: var(--date-font-family);
+          font-size: 1.3em !important; /* Ajuste de tamaño */
+          font-weight: normal;
+          margin: 1em 0;
+        }
+        .ibnYMY {
+          color: var(--cover-text-color);
+          font-family: var(--salutation-font-family);
+          font-size: 1.5em !important; /* Ajuste de tamaño */
+          font-weight: normal;
+          margin: 0.5em 0 1em;
+        }
+        .eYlzrN {
+          --primary-font-size: 2.5em !important; /* Ajuste de tamaño */
+          --tertiary-font-size: 1.2em !important; /* Ajuste de tamaño */
+          --title-font-size: 1.8em !important; /* Ajuste de tamaño */
+          --in-section-subtitle-font-size: 1.1em !important; /* Ajuste de tamaño */
+          --date-font-size: 1.5em !important; /* Ajuste de tamaño */
+          --salutation-font-size: 1.5em !important; /* Ajuste de tamaño */
+        }
+      }
+
+      /* Media query para teléfonos móviles en orientación horizontal */
+      @media (min-width: 481px) and (max-width: 767px) {
+        .ebYnuD {
+          color: var(--cover-text-color);
+          font-family: var(--date-font-family);
+          font-size: 1.5em !important; /* Ajuste de tamaño */
+          font-weight: normal;
+          margin: 1em 0;
+        }
+        .ibnYMY {
+          color: var(--cover-text-color);
+          font-family: var(--salutation-font-family);
+          font-size: 1.8em !important; /* Ajuste de tamaño */
+          font-weight: normal;
+          margin: 0.5em 0 1em;
+        }
+        .eYlzrN {
+          --primary-font-size: 3em !important; /* Ajuste de tamaño */
+          --tertiary-font-size: 1.3em !important; /* Ajuste de tamaño */
+          --title-font-size: 2em !important; /* Ajuste de tamaño */
+          --in-section-subtitle-font-size: 1.2em !important; /* Ajuste de tamaño */
+          --date-font-size: 1.8em !important; /* Ajuste de tamaño */
+          --salutation-font-size: 1.8em !important; /* Ajuste de tamaño */
+        }
+      }
+
+      /* Media query para tabletas en orientación vertical */
+      @media (min-width: 768px) {
+        .ebYnuD {
+          color: var(--cover-text-color);
+          font-family: var(--date-font-family);
+          font-size: 1em !important; /* Tamaño pequeño */
+          font-weight: normal;
+          margin: 1em 0;
+        }
+        .ibnYMY {
+          color: var(--cover-text-color);
+          font-family: var(--salutation-font-family);
+          font-size: 1.2em !important; /* Tamaño pequeño */
+          font-weight: normal;
+          margin: 0.5em 0 1em;
+        }
+        .eYlzrN {
+          --primary-font-size: 2em !important; /* Tamaño pequeño */
+          --tertiary-font-size: 1em !important; /* Tamaño pequeño */
+          --title-font-size: 1.5em !important; /* Tamaño pequeño */
+          --in-section-subtitle-font-size: 1em !important; /* Tamaño pequeño */
+          --date-font-size: 1.3em !important; /* Tamaño pequeño */
+          --salutation-font-size: 1.3em !important; /* Tamaño pequeño */
         }
       }
     </style>
@@ -520,7 +628,7 @@
         font-family: var(--salutation-font-family);
         font-size: var(--salutation-font-size);
         font-weight: normal;
-        margin: 0.5em 0 1em;
+        margin-right: 10px;
       }
       /* sc-component-id: sc-keyframes-ePqrBv */
       @-webkit-keyframes ePqrBv {
@@ -786,11 +894,11 @@
           overflow: hidden;
         }
       }
-      @media (min-width: 768px) {
+      @media (max-width: 768px) {
         .fxoMGj {
           margin-left: 2.5em;
           margin-right: 2.5em;
-          width: auto;
+          width: 100%;
         }
       }
       @media (min-width: 1024px) {
@@ -939,30 +1047,29 @@
         max-width: 350px;
         height: auto;
       }
-      .account{
+      .account {
         display: flex;
         align-items: center;
         justify-content: center;
       }
 
       .fa-icon {
-            cursor: pointer;
-            margin-left: 28px;
-            transition: transform 0.1s, background-color 0.1s;
-            padding: 10px;
-            border-radius: 50%;
-        }
+        cursor: pointer;
+        margin-left: 28px;
+        transition: transform 0.1s, background-color 0.1s;
+        padding: 10px;
+        border-radius: 50%;
+      }
 
-        .fa-icon:hover {
-            background-color: #555;
-            color: white;
-        }
+      .fa-icon:hover {
+        background-color: #555;
+        color: white;
+      }
 
-        .fa-icon:active {
-            transform: scale(0.95);
-            background-color: #777;
-        }
-
+      .fa-icon:active {
+        transform: scale(0.95);
+        background-color: #777;
+      }
     </style>
   </head>
   <body>
@@ -1184,7 +1291,11 @@
               <br />
               <div class="account">
                 <div>ES90 0182 1343 4602 0173 0772</div>
-                <i class="fas fa-copy" style="margin-left: 28px;" onclick="copyText()"></i>
+                <i
+                  class="fas fa-copy"
+                  style="margin-left: 28px"
+                  onclick="copyText()"
+                ></i>
               </div>
             </div>
             <div class="container" style="margin-top: 30px">
@@ -1349,20 +1460,20 @@
     }
 
     function copyText() {
-            // Crear un campo de texto temporal
-            var tempInput = document.createElement("input");
-            // Obtener el texto del elemento input
-            tempInput.value = "ES90 0182 1343 4602 0173 0772";
-            // Añadir el campo de texto temporal al body
-            document.body.appendChild(tempInput);
-            // Seleccionar el texto del campo temporal
-            tempInput.select();
-            tempInput.setSelectionRange(0, 99999); // Para dispositivos móviles
-            // Copiar el texto al portapapeles
-            document.execCommand("copy");
-            // Eliminar el campo de texto temporal
-            document.body.removeChild(tempInput);
-        }
+      // Crear un campo de texto temporal
+      var tempInput = document.createElement("input");
+      // Obtener el texto del elemento input
+      tempInput.value = "ES90 0182 1343 4602 0173 0772";
+      // Añadir el campo de texto temporal al body
+      document.body.appendChild(tempInput);
+      // Seleccionar el texto del campo temporal
+      tempInput.select();
+      tempInput.setSelectionRange(0, 99999); // Para dispositivos móviles
+      // Copiar el texto al portapapeles
+      document.execCommand("copy");
+      // Eliminar el campo de texto temporal
+      document.body.removeChild(tempInput);
+    }
 
     window.onload = checkAuthentication;
   </script>
